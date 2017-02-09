@@ -1,0 +1,12 @@
+html,body{
+  margen: 0px
+}
+.be-red{
+  background-color : rgb(300,60,60)
+}
+.while{
+  color : while
+}
+.large-padding{
+  padding: 18px ,10px
+}

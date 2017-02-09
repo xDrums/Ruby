@@ -1,0 +1,22 @@
+class ArticlesController < ApplicationController
+  #GET /articles
+  def index
+    #puedo accedet desde la vista
+    @articles = Article.all
+  end
+  #GET /articles/:id
+  def show
+    @articles = Article.find(params[:id])
+  end
+  #GET /articles/new # articulos nuevos
+  def new
+    @articles = Article.new
+  end
+  #POST /articles
+  def create
+    @articles = Article.new(title: params[:articles][:title],
+                            body: params[:articles][:body])
+    @articles.save
+    redirect_to @articles;
+  end
+end

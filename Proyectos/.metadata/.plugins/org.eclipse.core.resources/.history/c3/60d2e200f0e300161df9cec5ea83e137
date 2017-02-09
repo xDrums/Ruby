@@ -1,0 +1,5 @@
+<h1>Bienvenido!!</h1>
+<%[1,2,3,4].each do |number| %> <!-- Imprime Cosas -->
+<p>Numero : <=%number></p> <!-- Solo Evalua -->
+<p>Find me in app/views/welcome/index.html.erb</p>
+<%end%>

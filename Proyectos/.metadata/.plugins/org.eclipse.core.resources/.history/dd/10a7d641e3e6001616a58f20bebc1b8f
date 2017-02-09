@@ -1,0 +1,15 @@
+Rails.application.routes.draw do
+  get 'welcome/index'
+  root 'welcome#index'
+  
+  get "special", to: "welcome#index"
+  
+HTTP
+  Verbos:
+  GET
+  POST
+  PATCH
+  PUT
+  DELETE
+     
+end

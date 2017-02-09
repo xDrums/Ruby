@@ -1,0 +1,11 @@
+class ArticlesController < ApplicationController
+  #GET /articles
+  def index
+    #puedo accedet desde la vista
+#    @articles = Article.all
+  end
+  #GET /articles/:id
+  def show
+    @articles = Article.find(params[:id])
+  end
+end

@@ -1,0 +1,47 @@
+html,body{
+  margen: 0px;
+}
+.btn{
+  background-color: inherit;
+  border:none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.be-blue{
+  background-color : #67c0ff!important;
+}
+.white{
+  color : white;
+}
+nav{
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+ul >  li > a{
+  color :inherit;
+  text-decoration: none!important;
+  font-size: 25px;
+}
+ul{
+  list-style-type:none
+}
+.field {
+    margin-top: 1em;
+}
+.form-control{
+  border : none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
+}
+.btn{
+  background-color: inherit;
+  border:none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}

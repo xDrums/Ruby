@@ -1,0 +1,17 @@
+html,body{
+  margen: 0px;
+}
+.be-red{
+  background-color : rgb(200,60,300);
+}
+.while{
+  color : white;
+}
+.large-padding{
+  padding: 10px ,7px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+a:visited{
+  color :inherit;
+}

@@ -1,0 +1,6 @@
+class Article < ApplicationRecord
+  #la tabla => articles
+  #campos => article.title() => 'titulo articulo'
+  #escribir metodoss
+  
+end

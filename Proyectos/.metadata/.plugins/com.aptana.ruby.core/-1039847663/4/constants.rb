@@ -1,0 +1,13 @@
+ARGV = []
+TRUE = true
+FALSE = false
+STDOUT = IO.new
+STDIN = IO.new
+STDERR = IO.new
+ENV = {}
+NIL = nil
+RUBY_PATCHLEVEL = 222
+RUBY_COPYRIGHT = 'ruby - Copyright (C) 1993-2016 Yukihiro Matsumoto'
+TOPLEVEL_BINDING = Binding.new
+RUBY_VERSION = '2.3.3'
+RUBY_PLATFORM = 'i386-mingw32'

@@ -1,0 +1,8 @@
+class Article < ApplicationRecord
+  #la tabla => articles
+  #campos => article.title() => 'titulo articulo'
+  #escribir metodoss
+  validates :title, presence: true
+  validates :body, presence: true, length: {minimum: 20}
+  
+end
