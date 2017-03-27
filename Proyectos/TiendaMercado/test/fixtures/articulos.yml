@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  cuerpo: MyText
+  link_mercado: MyText
+  count_vts: 
+  image: MyString
+
+two:
+  titulo: MyString
+  cuerpo: MyText
+  link_mercado: MyText
+  count_vts: 
+  image: MyString

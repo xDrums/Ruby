@@ -1,0 +1,26 @@
+<% @articulos.each do |articulo| %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h1>Articulos</h1>
+<% @articulos.each do |articulo| %>
+<div class="art_main">
+    
+    
+        <div class="img_index"><%=  image_tag(articulo.image.thumb.url) %></div>
+        <div class="ttl_index"><%= link_to articulo.titulo,articulo %></div>
+        <div class="cp_index"><%= link_to articulo.cuerpo,articulo %></div>
+</div>
+       
+ <!--        <div class=="link"><%= articulo.link_mercado %></div>
+        <div class=="titulo"><%= articulo.count_vts %></div> -->
+        
+ <!--       <div<%= link_to 'Show', articulo %></div>
+        <div><%= link_to 'Edit', edit_articulo_path(articulo) %></div>
+        <div><%= link_to 'Destroy', articulo, method: :delete, data: { confirm: 'Are you sure?' } %></tddiv -->
+<% end %> 
+    
+<br>
+
+<!-- 
+<%= link_to 'New Articulo', new_articulo_path %> 
+ -->

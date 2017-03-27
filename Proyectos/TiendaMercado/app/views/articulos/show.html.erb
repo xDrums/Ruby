@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @articulo.titulo %>
+</p>
+
+<p>
+  <strong>Cuerpo:</strong>
+  <%= @articulo.cuerpo %>
+</p>
+
+<p>
+  <strong>Link mercado:</strong>
+  <%= @articulo.link_mercado %>
+</p>
+
+<p>
+  <strong>Count vts:</strong>
+  <%= @articulo.count_vts %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @articulo.image.thumb.url %>
+</p>
+
+<%= link_to 'Edit', edit_articulo_path(@articulo) %> |
+<%= link_to 'Back', articulos_path %>
