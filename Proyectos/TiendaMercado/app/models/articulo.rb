@@ -2,6 +2,7 @@ class Articulo < ApplicationRecord
   mount_uploader :image, ImageUploader
   validates_processing_of :image
   validate :image_size_validation
+
  
 private
   def image_size_validation

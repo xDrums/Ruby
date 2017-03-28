@@ -4,11 +4,12 @@
 <h1>Articulos</h1>
 <% @articulos.each do |articulo| %>
 <div class="art_main">
-    
-    
-        <div class="img_index"><%=  image_tag(articulo.image.thumb.url) %></div>
-        <div class="ttl_index"><%= link_to articulo.titulo,articulo %></div>
-        <div class="cp_index"><%= link_to articulo.cuerpo,articulo %></div>
+	<div class="art_main2">
+		<div class="img_index"><%= link_to (image_tag articulo.image_url(:thumb).to_s),articulo %></div>
+	</div>
+		<div class="ttl_index"><%= link_to articulo.titulo,articulo %></div>
+		<div class="cp_index"><%= link_to articulo.cuerpo,articulo %></div>
+	
 </div>
        
  <!--        <div class=="link"><%= articulo.link_mercado %></div>

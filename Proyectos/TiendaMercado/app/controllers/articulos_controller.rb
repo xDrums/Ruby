@@ -10,6 +10,10 @@ class ArticulosController < ApplicationController
   # GET /articulos/1
   # GET /articulos/1.json
   def show
+    #Contador Visitas + 1
+    @articulo = Articulo.where('id = ?', params[:id]).first
+    @articulo.update_column('count_vts', @articulo.count_vts + 1) if @articulo.present?
+    
   end
 
   # GET /articulos/new
@@ -25,8 +29,8 @@ class ArticulosController < ApplicationController
   # POST /articulos.json
   def create
     @articulo = Articulo.new(articulo_params)
-
     respond_to do |format|
+      @articulo.count_vts = -1
       if @articulo.save
         format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }
         format.json { render :show, status: :created, location: @articulo }
