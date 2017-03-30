@@ -24,6 +24,7 @@
   <strong>Image:</strong>
   <%= image_tag @articulo.image.thumb.url %>
 </p>
-
+<% if user_signed_in? %>
 <%= link_to 'Edit', edit_articulo_path(@articulo) %> |
 <%= link_to 'Back', articulos_path %>
+<%end%>

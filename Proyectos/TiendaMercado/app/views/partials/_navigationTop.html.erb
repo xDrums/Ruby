@@ -9,9 +9,11 @@
   				<li class="col-md">
   					<%= link_to 'Inicio', articulos_path %>
   				</li>
+  				<% if user_signed_in? %>
   				<li class="col-md">
   					<%= link_to 'Nuevo Articulo', new_articulo_path%>
   				</li>
+  				<%end%>
   				<li class="col-md">
   					<%= link_to "Programacion"%>
   				</li>

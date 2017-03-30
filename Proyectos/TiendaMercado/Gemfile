@@ -4,7 +4,11 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+#Se ocupa esta gema de bcrypt sacada de git porque no funciona bien sin ella para agregar 
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 gem 'devise'
+
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -48,3 +52,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
