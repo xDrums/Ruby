@@ -1,10 +1,17 @@
 class ArticulosController < ApplicationController
+  before_action :authenticate_user!,except:[:index, :show]
   before_action :set_articulo, only: [:show, :update, :destroy]
- before_action :authenticate_user!,except:[:index, :show]
   # GET /articulos
   # GET /articulos.json
   def index
+    
+  @q = params[:q]
+  if @q
+    @articulos = Articulo.where("titulo like ?", "%#@q%")
+  else
+    #Articulo.all
     @articulos = Articulo.all
+   end
   end
 
   # GET /articulos/1
@@ -29,8 +36,8 @@ class ArticulosController < ApplicationController
   # POST /articulos.json
   def create
     @articulo = Articulo.new(articulo_params)
+    @articulo.count_vts = -1
     respond_to do |format|
-      @articulo.count_vts = -1
       if @articulo.save
         format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }
         format.json { render :show, status: :created, location: @articulo }

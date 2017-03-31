@@ -3,7 +3,7 @@
 <% end %>
 <h1>Articulos</h1>
 <% @articulos.each do |articulo| %>
-<div class="art_main">
+<div class="row">
 	<div class="art_main2">
 		<div class="img_index"><%= link_to (image_tag articulo.image_url(:thumb).to_s),articulo %></div>
 	</div>
